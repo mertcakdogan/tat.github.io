@@ -1,0 +1,416 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap');
+
+/* navbar başlangıç */
+
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+a,
+a:link,
+a:visited{
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+ul,
+li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+section,
+span,
+p{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.header{
+    background-image: url(images/arkaplan.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    padding: 40px 0;
+    
+}
+
+.header-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo{
+    font-size: 1px;
+    letter-spacing: 2px;
+    border-bottom: 5px solid black;
+    border-radius: 35px;
+    padding-bottom: 5px;
+}
+
+
+ul{
+    display: flex;
+}
+
+li{
+    margin-left: 27px;
+
+}
+
+a{
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.header-text{
+    position: absolute;
+    top: 25%;
+    left: 49%;
+    transform: translateX(-40%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+h1{
+    font-size: 8rem;
+    font-weight: 100;
+    line-height: 0.4;
+    letter-spacing: 2px;
+    font-family: 'Herr Von Muellerhoff', cursive;
+}
+.first-letter{
+    font-size: 10.3rem;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    color: #2E2D32;
+
+}
+h3{
+    margin-bottom: 25px;
+    font-size: 22px;
+}
+
+.btn-start{
+    display: block;
+    background-color: #2E2D32;
+    color: #fff;
+    padding: 10px 15px;
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-start::after{
+    content: "DISCOVER";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+
+}
+
+.btn-start:hover::after{
+    top: 0;
+
+}
+
+/* navbar bitiş */
+
+/* about başlangıç*/
+
+.about{
+    margin: 1px;
+
+}
+
+.about-tittle{
+    margin: 60px 0;
+
+}
+
+.about-tittle h2{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: #2E2D32;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.about-tittle h2::after{
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: #2E2D32;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.about-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.about-image{
+    position: relative;
+    left: -300px;
+    width: 40%;
+    
+}
+
+.about-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-text{
+    position: relative;
+    right: -600px;
+    top: -250px;
+    width: 40%;
+}
+h4{
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 40px;
+    color: #2E2D32;
+    font-family: 'Herr Von Muellerhoff';
+    letter-spacing: 0.5rem;
+    font-weight: 100;
+}
+
+#headphones{
+    color: #2E2D32;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.about-text p{
+    font-size: 15px;
+    text-align: center;
+    color: #2c2717;
+}
+
+/* about bitiş*/
+
+/* discover başlangıç*/
+
+.discover{
+    display: flex;
+    flex-wrap: wrap;
+}
+.discover-item{
+    width: 25%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.discover-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+    
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: #ADB7A5;
+    position: absolute;
+    top:100%;
+    left: 0;
+    opacity: 0.8;
+    color: #fff;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+
+
+
+}
+
+.discover-item:hover .overlay{
+    top: 0;
+      
+}
+
+.discover-item:hover .img{
+    transform: scale(1.1);
+
+
+}
+
+/* discover bitiş */
+
+
+/*contact başlangıç*/
+
+
+.contact{
+    padding: 10px 0;
+}
+
+.contact h2{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: #2E2D32;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.contact h2::after{
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: #2E2D32;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.contact-content{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-item{
+    display: flex;
+    align-items: center;
+    flex-basis: 33%;
+    margin-bottom: 100px;
+    flex-direction: column;
+}
+
+.contact-item i{
+    font-size: 25px;
+    margin-bottom: 30px;
+    color: red;
+}
+
+.contact-item p{
+    font-size: 14px;
+    line-height: 33px;
+}
+
+/* Contact Bitiş*/
+
+/* Footer Başlangıç*/
+
+.footer h2{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 60px 0;
+}
+
+.footer h2:after{
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.footer{
+    background-color: black;
+}
+
+.footer-copyright{
+    color: #fff;
+    text-align: center;
+    flex-basis: 55%;
+    line-height: 2;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-social:first-child{
+    margin-left: 70px;
+}
+
+#menu-icon{
+    font-size: 25px;
+    display: none;
+    margin-left: 20px;
+}
+
+@media only screen and (max-width : 800px){
+    .header-menu ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        left: 0px;
+        background-color: #515053;
+        width: 100%;
+        overflow: hidden;
+        transition: .5s;
+    }
+    .header-menu ul li{
+        margin-right: 50px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .header-menu ul li a{
+        color: #fff;
+    }
+    .header-menu #menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+}
+
